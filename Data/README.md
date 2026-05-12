@@ -12,12 +12,19 @@ Repository Data bao gồm 03 thành phần chính phục vụ quá trình khai t
 * **Đặc điểm:** * Chạy trên môi trường Local (VS Code/PyCharm).
     * Sử dụng thư viện VCI, có thể truy xuất dữ liệu quá khứ của các hợp đồng đã đáo hạn, phục vụ việc huấn luyện mô hình Machine Learning cần độ sâu thời gian lớn.
 
-### 3. Raw Dataset (đuôi .csv)
-* **Mô tả:** Tập dữ liệu thô đã được trích xuất thành công từ script Local, gồm 2,953 dòng dữ liệu từ ngày 11/09/2023 đến ngày 12/05/2026
+### 3. Raw Dataset by hour (vn30f1m_raw_dataset_byhour.csv)
+* **Mô tả:** Tập dữ liệu thô đã được trích xuất thành công từ script Local, gồm 2,953 dòng dữ liệu với bước nhảy 1h, từ ngày 11/09/2023 đến ngày 12/05/2026
 * **Các trường dữ liệu:** * `time`: Thời gian giao dịch.
     * `open`, `high`, `low`, `volume`: Các thông số kỹ thuật cơ bản.
     * `vn30_index`: Chỉ số cơ sở VN30 (Biến độc lập).
-    * `y_f1m`: Giá đóng cửa VN30F1M (Biến mục tiêu cho bài toán hồi quy).
+    * `y_f1m`: Giá VN30F1M (Biến mục tiêu cho bài toán hồi quy).
+
+### 4. Raw Dataset by day (vn30f1m_raw_dataset_byday.csv)
+* **Mô tả:** Tập dữ liệu thô đã được trích xuất thành công từ script Local, gồm 2,169 dòng dữ liệu với bước nhảy 1 ngày, từ ngày 10/08/2017 đến ngày 12/05/2026
+* **Các trường dữ liệu:**
+   * `vn30_index`: Giá đóng cửa của chỉ số VN30 cùng ngày.
+   * `y_f1m`: Giá đóng cửa của VN30F1M cùng ngày.
+   * Các chỉ số còn lại tương tự dataset by hour
 
 ## Cách cài đặt & Sử dụng
 
