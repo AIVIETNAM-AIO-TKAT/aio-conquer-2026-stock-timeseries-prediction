@@ -1,5 +1,6 @@
 Repository Data bao gồm 03 thành phần chính phục vụ quá trình khai thác dữ liệu:
 
+## Mô tả
 ### 1. Google Colab Notebook (đuôi .ipynb)
 * **Mục đích:** Phục vụ làm việc nhóm, cộng tác trực tuyến và chạy thử nghiệm nhanh (Prototyping).
 * **Đặc điểm:** * Sử dụng thư viện `vnstock` kết nối qua API của các công ty chứng khoán (mặc định KBS).
